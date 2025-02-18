@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './contextMenu.module.css';
 
-const ContextMenu = ({ position, onClose, onMenuItemClick }) => {
+const ContextMenu = ({ position, onClose, onMenuItemClick, isPinned }) => {
     return (
         <div
             className={styles.contextMenu}
@@ -9,7 +9,9 @@ const ContextMenu = ({ position, onClose, onMenuItemClick }) => {
             onClick={(e) => e.stopPropagation()}
         >
             <ul>
-                <li onClick={onMenuItemClick}>Pin</li>
+                <li onClick={onMenuItemClick}>
+                    {isPinned ? 'Unpin' : 'Pin'}
+                </li>
             </ul>
         </div>
     );
