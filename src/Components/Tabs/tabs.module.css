@@ -1,0 +1,27 @@
+.tabs {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    background-color: white;
+}
+
+.tabs .active {
+    border: none;
+    border-top: #007bff 2px solid;
+    background-color: #F1F5F8;
+}
+
+.content {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
